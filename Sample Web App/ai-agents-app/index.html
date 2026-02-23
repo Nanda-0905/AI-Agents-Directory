@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Top 10 AI Applications & Agents</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <h1>🤖 Top 10 AI Applications & Agents</h1>
+            <p class="subtitle">Discover leading AI tools across 8+ categories</p>
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="search-box">
+                <input type="text" id="search" placeholder="Search AI tools...">
+                <span class="search-icon">🔍</span>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <aside class="sidebar">
+            <h2>Categories</h2>
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="all">All Tools 🌐</button>
+                <button class="filter-btn" data-category="llm">LLMs & Chatbots 💬</button>
+                <button class="filter-btn" data-category="code">Code Assistants 💻</button>
+                <button class="filter-btn" data-category="image">Image Generation 🎨</button>
+                <button class="filter-btn" data-category="data">Data Analysis & ML 📊</button>
+                <button class="filter-btn" data-category="voice">Voice & Speech 🎙️</button>
+                <button class="filter-btn" data-category="video">Video & Media 🎬</button>
+                <button class="filter-btn" data-category="automation">Automation & RPA 🤖</button>
+            </div>
+        </aside>
+
+        <section class="main-content">
+            <div class="tools-grid" id="toolsGrid">
+                <!-- Cards will be inserted here by JavaScript -->
+            </div>
+            <div id="noResults" class="no-results">
+                <p>No tools found. Try a different search or category.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 AI Applications Guide. Data current as of February 2026.</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

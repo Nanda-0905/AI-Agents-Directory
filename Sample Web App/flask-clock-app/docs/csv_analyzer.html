@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CSV Analyzer — Static</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="navbar">
+    <a href="index.html">Clock App</a>
+    <a href="csv_analyzer.html">CSV Analyzer</a>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <h1>CSV Analyzer (client-side)</h1>
+      <p class="small">Upload a CSV file and the browser will compute a summary and per-column statistics — no server required.</p>
+
+      <div class="upload-area" id="upload-area">
+        <p>Click to select or drag & drop a CSV file</p>
+        <input type="file" id="file-input" class="file-input" accept=".csv,text/csv" />
+      </div>
+
+      <div class="loading" id="loading">
+        <div class="spinner"></div>
+        <div>Parsing CSV…</div>
+      </div>
+
+      <div class="error" id="error"></div>
+      <div class="stats-summary" id="summary">
+        <div class="summary-grid">
+          <div class="summary-item">
+            <h3>Total Rows</h3>
+            <div class="value" id="total-rows">0</div>
+          </div>
+          <div class="summary-item">
+            <h3>Total Columns</h3>
+            <div class="value" id="total-cols">0</div>
+          </div>
+          <div class="summary-item">
+            <h3>Column Names</h3>
+            <div class="value" id="col-names">-</div>
+          </div>
+        </div>
+
+        <div class="column-stats" id="column-stats"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PapaParse from CDN for robust CSV parsing in browser -->
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.2/papaparse.min.js"></script>
+  <script src="js/csv_analyzer.js"></script>
+</body>
+</html>

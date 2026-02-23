@@ -1,0 +1,13 @@
+[tool.poetry]
+name = "flask-clock-app"
+version = "0.1.0"
+description = "A simple Flask application that displays a real-time clock on a web page."
+authors = ["Your Name <youremail@example.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+flask = "^2.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
